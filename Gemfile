@@ -39,11 +39,9 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 # Added by me
-gem 'thin'
 gem 'compass-rails'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
-gem 'figaro'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'will_paginate', '~> 3.0'
@@ -53,3 +51,9 @@ group :development do
 	gem 'quiet_assets'
 	gem 'rails_layout'
 end
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+	gem 'thin'
+end
+
